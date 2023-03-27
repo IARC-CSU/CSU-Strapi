@@ -4,7 +4,8 @@
   "info": {
     "singularName": "faq",
     "pluralName": "faqs",
-    "displayName": "FAQ"
+    "displayName": "FAQ",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,6 +22,9 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::project.project"
+    },
+    "Position": {
+      "type": "integer"
     }
   }
 }
