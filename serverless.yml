@@ -78,3 +78,11 @@ functions:
 plugins:
   - serverless-offline
   - serverless-plugin-utils
+  # - serverless-domain-manager
+
+#custom:
+  #customDomain:
+    #domainName: csu-strapi.aws-csu.iarc.who.int
+    #basePath: ''
+    #stage: ${self:provider.stage}
+    #createRoute53Record: true
