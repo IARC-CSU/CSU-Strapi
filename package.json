@@ -5,8 +5,9 @@
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop NODE_ENV=development",
+    "develop_admin": "strapi develop --watch-admin NODE_ENV=development",
     "start": "strapi start",
-    "build": "strapi build",
+    "build": "strapi build NODE_ENV=production",
     "strapi": "strapi",
     "svl": "serverless",
     "tf": "cd terraform && terraform"

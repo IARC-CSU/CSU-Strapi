@@ -14,6 +14,18 @@
   "attributes": {
     "Name": {
       "type": "string"
+    },
+    "news": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::news-item.news-item",
+      "inversedBy": "projects"
+    },
+    "page": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page.page",
+      "inversedBy": "projects"
     }
   }
 }

@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "news_items",
+  "collectionName": "pages",
   "info": {
-    "singularName": "news-item",
-    "pluralName": "news-items",
-    "displayName": "News",
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Pages",
     "description": ""
   },
   "options": {
@@ -18,23 +18,6 @@
   "attributes": {
     "Title": {
       "type": "string",
-      "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "Image": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -53,7 +36,7 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::project.project",
-      "mappedBy": "news"
+      "mappedBy": "page"
     }
   }
 }

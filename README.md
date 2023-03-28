@@ -1,10 +1,18 @@
-# 🚀 CSU Strapi doc
+# 🚀 CSU Strapi
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
+This is a repository which aim is to provide a Content Management Sytem (CMS) for CSU web projects. Over the last years, many web solutions have been implemented (custom PHP, Wordpress, home made ASP.net, lektor, Joomla or Vue) and used to launch a website. It usually means as many backend/content solution as framework. 
+
+Using Strapi is motivated by the way we want to decouple service. Strapi is a headless CMS, meaning there's no "frontend" to the content provided by Strapi, only data provided through a REST API. These data (News, pages, list, text, glossary, FAQ, etc .. ) can be reused accross any web (or mobile) applications able to read JSON files.
+
+## Prerequsites
+
+The [Strap documentation](https://docs.strapi.io/dev-docs/installation/cli) to start developing is quite exhausted. You need to have Node.js at least with npm or yarn.
+
+The CSU [Strapi](https://strapi.io/) will use a sqlite database in development mode (see ./config/env/development/ folder) for details and postgresql DB for production (see ./config/env/production/ folder).
 
 ### `develop`
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
+Start your Strapi application with autoReload enabled. 
 
 ```
 npm run develop
@@ -12,19 +20,9 @@ npm run develop
 yarn develop
 ```
 
-### `start`
-
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
-
-```
-npm run start
-# or
-yarn start
-```
-
 ### `build`
 
-Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
+Build your admin panel. 
 
 ```
 npm run build
