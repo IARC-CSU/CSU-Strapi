@@ -15,13 +15,7 @@ const config = {
     'ru'
   ],
   translations: {
-    fr: {
-      'Auth.form.email.label': 'test',
-      Users: 'Utilisateurs',
-      City: 'CITY (FRENCH)',
-      // Customize the label of the Content Manager table.
-      Id: 'ID french',
-    },
+
   },
   head: {
     favicon: favicon
@@ -48,7 +42,7 @@ const config = {
 };
 
 const bootstrap = (app) => {
-  console.log(" ===> app ", app);
+  console.log(" ===> app totop ", app);
 };
 
 export default {
