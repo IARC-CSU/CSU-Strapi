@@ -111,10 +111,10 @@ node_modules
 .pnp.*
 yarn-error.log
 
-############################
 # Tests
 ############################
 
+testApp
 coverage
 
 ############################
@@ -126,6 +126,9 @@ license.txt
 exports
 .strapi
 dist
-build
 .strapi-updater.json
 .strapi-cloud.json
+*.cache
+dist
+build
+.strapi-updater.json
