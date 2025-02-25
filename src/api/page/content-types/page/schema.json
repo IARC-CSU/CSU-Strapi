@@ -32,15 +32,20 @@
         }
       }
     },
-    "Author": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
-    },
     "project": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::project.project"
+    },
+    "Thumbnail": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

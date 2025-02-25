@@ -1,0 +1,14 @@
+stages:
+    - deploy
+
+deploy :
+    stage: deploy
+    tags:
+        - dind-prod
+    environment: development
+    only:
+        refs:
+            - dockerize
+    when: manual
+    script:
+        - sudo docker-compose -p strapi up -d --build

@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "google_analytics",
+  "info": {
+    "singularName": "google-analytic",
+    "pluralName": "google-analytics",
+    "displayName": "Google Analytics",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "gco_ga_code": {
+      "type": "string"
+    },
+    "gicr_ga_code": {
+      "type": "string"
+    },
+    "ci5_ga_code": {
+      "type": "string"
+    }
+  }
+}
